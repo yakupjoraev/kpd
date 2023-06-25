@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/basket.css">
     <link rel="stylesheet" href="/css/error.css">
     <link rel="stylesheet" href="/css/productcard.css">
+    <link rel="stylesheet" href="/css/media-query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
@@ -21,77 +22,88 @@
 
     <!-- Header -->
     <header class="header" id="header">
-        <div class="container">
-            <div class="header-sections">
-
-                <div class="header-sections-logo">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="/img/Logo.svg" alt="img" class="logo__img">
-                        </a>
-                        
-                    </div>
-                </div>
-                    
-                <div class="header-sections-nav">
-
-                    <div class="header-sections-nav-top">
-                        <div class="search">
-                            <div class="search-top">
-                                <button class="search-top__catalog">
-                                    <span class="search-top__catalog-title">Каталог</span>
-                                </button>
-            
-                                <input type="text" class="search-top__input" >
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <div class="info-top">
-                                <div class="info-basket">
-                                    <a href="#">
-                                        <img src="/img/basket.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-contacts">
-                                    <p class="info-contacts-support">Служба поддержки:</p>
-                                    <a href="#" class="info-contacts-number">8 800 158 58 58</a>
-                                    <a href="#" class="info-contacts-order">Заказать звонок </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="header-sections-nav-buttom">
-                        <div class="header-sections-nav-buttom-link">
-
-                            <div class="header-sections-nav-buttom-link__file">
-                                <img src="/img/file.svg" alt="img">
-                                <a href="#" class="header-sections-nav-buttom__link_activ">
-                                    Заказать файлом
-                                </a>
-                            </div>
-
-                            <div class="header-sections-nav-buttom-link__links">
-                                <div class="header-sections-nav-buttom__link">
-                                    <a href="#" class="header-sections-nav-buttom__link_passiv">Скидки и Акции</a>
-                                </div>
-                                <div class="header-sections-nav-buttom__link">
-                                    <a href="#" class="header-sections-nav-buttom__link_passiv">О компании</a>
-                                </div>
-                                <div class="header-sections-nav-buttom__link">
-                                    <a href="#" class="header-sections-nav-buttom__link_passiv">Доставка и Оплата</a>
-                                </div>
-                                <div class="header-sections-nav-buttom__link">
-                                    <a href="#" class="header-sections-nav-buttom__link_passiv">Контакты</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+      <div class="container">
+        <div class="header-sections">
+  
+          <div class="header-sections-logo">
+            <div class="logo">
+              <a href="#">
+                <img src="/img/Logo.svg" alt="img" class="logo__img">
+              </a>
+  
             </div>
+          </div>
+  
+          <div class="header-sections-nav">
+  
+            <div class="header-sections-nav-top">
+              <div class="search">
+                <div class="search-top">
+                  <button class="search-top__catalog">
+                    <span class="search-top__catalog-title">Каталог</span>
+                  </button>
+  
+                  <input type="text" class="search-top__input">
+                </div>
+              </div>
+  
+              <div class="header-sections-nav-buttom-link__file header-sections-nav-buttom-link__file--tablet">
+                <img src="/img/file.svg" alt="img">
+                <a href="#" class="header-sections-nav-buttom__link_activ">
+                  Заказать файлом
+                </a>
+              </div>
+  
+              <div class="info">
+                <div class="info-top">
+                  <div class="info-basket">
+                    <a href="#">
+                      <img src="/img/basket.svg" alt="img">
+                    </a>
+                  </div>
+                  <div class="info-contacts">
+                    <p class="info-contacts-support">Служба поддержки:</p>
+                    <a href="#" class="info-contacts-number">8 800 158 58 58</a>
+                    <a href="#" class="info-contacts-order">Заказать звонок </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="burger">
+                <span></span>
+              </div>
+            </div>
+  
+            <div class="header-sections-nav-buttom">
+              <div class="header-sections-nav-buttom-link">
+  
+                <div class="header-sections-nav-buttom-link__file">
+                  <img src="/img/file.svg" alt="img">
+                  <a href="#" class="header-sections-nav-buttom__link_activ">
+                    Заказать файлом
+                  </a>
+                </div>
+  
+                <div class="header-sections-nav-buttom-link__links">
+                  <div class="header-sections-nav-buttom__link">
+                    <a href="#" class="header-sections-nav-buttom__link_passiv">Скидки и Акции</a>
+                  </div>
+                  <div class="header-sections-nav-buttom__link">
+                    <a href="#" class="header-sections-nav-buttom__link_passiv">О компании</a>
+                  </div>
+                  <div class="header-sections-nav-buttom__link">
+                    <a href="#" class="header-sections-nav-buttom__link_passiv">Доставка и Оплата</a>
+                  </div>
+                  <div class="header-sections-nav-buttom__link">
+                    <a href="#" class="header-sections-nav-buttom__link_passiv">Контакты</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
         </div>
+      </div>
     </header>
 
 
@@ -407,7 +419,8 @@
                             <input type="text" class="questions-input__number" placeholder="Куда нам ответить или перезвонить?">
                         </div>
                         <div class="questions-input__comment">
-                            <input type="text" class="questions-input__comment" placeholder="Вопрос / комментарий / пожелание">
+                          <textarea type="text" class="questions-input__comment"
+                          placeholder="Вопрос / комментарий / пожелание"></textarea>
                         </div>
 
                         <div class="questions-input-buttom">

@@ -1,0 +1,154 @@
+.section-delivery{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    color: #0E262D;
+    font-family: 'Montserrat';
+}
+
+
+
+/*---Доставка---*/
+
+.delivery-title-title{
+    color: #991B1E;
+    font-family: 'Roboto Slab';
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.delivery-text-text{
+    color: #0E262D;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.block-delivery{
+    background-color: #F5F5F5;
+}
+
+.delivery-text-text-title{
+    color: #0E262D;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.delivery-text-list{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.delivery-text-text-list{
+    list-style-type: disc;
+    color: #0E262D;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.delivery-text-text-link{
+    color: #991B1E;
+    text-decoration: underline;
+}
+
+.delivery-buttom{
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    margin-bottom: 60px;
+    height: 141px;
+    align-items: center;
+}
+.delivery-buttom-left{
+    margin-left: 40px;
+}
+.delivery-buttom-right{
+    width: 928px;
+    margin-left: 40px;
+}
+
+/*---Хлебные крошки---*/
+.section-breadcrumb{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding-top: 35px;
+  }
+  
+  .section-title__breadcrumb-breadcrumb{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  gap: 10px;
+  }
+  
+  .section-title__breadcrumb-breadcrumb{
+  color: #869295;
+  }
+  
+  .section-title_title-catalog{
+  font-size: 40px;
+  font-weight: 600;
+  color: #0E262D;
+  }
+  .passiv-breadcrumb{
+    color: #869295;
+  }
+  
+  .activ-breadcrumb{
+    color: #0E262D;
+  }
+  
+
+  .company-text-text-link{
+    font-weight: 600;
+    color: #991B1E;
+    
+  }
+
+  .delivery-title-title-top{
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    width: 507px;
+    margin-left: 639px;
+  }
+
+  .delivery-buttom-block{
+    display: flex;
+    align-items: center;
+  }
+
+  .advantage{
+    height: 310px;
+  }
+
+  .delivery-top{
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    margin-bottom: 60px;
+    height: 344px;
+    align-items: center;
+    background-image: url(/img/company.svg);
+}

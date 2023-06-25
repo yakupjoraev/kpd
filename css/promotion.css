@@ -1,0 +1,83 @@
+/*---Хлебные крошки---*/
+.section-breadcrumb{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding-top: 35px;
+  }
+  
+  .section-title__breadcrumb-breadcrumb{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  gap: 10px;
+  }
+  
+  .section-title__breadcrumb-breadcrumb{
+  color: #869295;
+  }
+  
+  .section-title_title-catalog{
+  font-size: 40px;
+  font-weight: 600;
+  color: #0E262D;
+  }
+  .passiv-breadcrumb{
+    color: #869295;
+  }
+  
+  .activ-breadcrumb{
+    color: #0E262D;
+  }
+
+.promotion-card{
+    margin-bottom: 20px;
+}
+
+.promotion-navigation{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.promotion-navigation__list-list{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.promotion-navigation__list-link{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E262D;
+    
+}
+.promotion-navigation__list-list-activ{
+    width: 30px;
+}
+
+
+.promotion-navigation__button-button{
+    background-color: #FFFFFF;
+    border: 3px solid #991B1E;
+    width: 202px;
+    height: 40px;
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    color: #991B1E;
+}

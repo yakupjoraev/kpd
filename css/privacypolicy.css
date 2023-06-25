@@ -1,0 +1,69 @@
+/*---Хлебные крошки---*/
+.section-breadcrumb{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding-top: 35px;
+  }
+  
+  .section-title__breadcrumb-breadcrumb{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  gap: 10px;
+  }
+  
+  .section-title__breadcrumb-breadcrumb{
+  color: #869295;
+  }
+  
+  .section-title_title-catalog{
+  font-size: 40px;
+  font-weight: 600;
+  color: #0E262D;
+  }
+  .passiv-breadcrumb{
+    color: #869295;
+  }
+  
+  .activ-breadcrumb{
+    color: #0E262D;
+  }
+
+.section-policyprivacy{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-bottom: 46px;
+    color: #0E262D;
+    font-family: 'Montserrat';
+    padding-left: 20px;
+}
+
+.privacy-title-activ{
+    color: #991B1E;
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.privacy-title-passiv{
+    padding-left: 20px;
+}
+
+.privacy-title-passiv-i{
+    padding-left: 25px;
+}

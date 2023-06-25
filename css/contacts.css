@@ -1,0 +1,110 @@
+
+.contacts-section{
+    height: 335px;
+}
+.contacts-section-block{
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contacts-block{
+    margin-top: 62px;
+  }
+  
+  .contacts-block-info{
+    font-family: 'Montserrat';
+  }
+  
+  .contacts-section-block-info{
+    width: 499px;
+  }
+  .contacts-block-info-section__title{
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: #991B1E;
+  }
+ .contacts-block-info-section__mess{
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 700;
+    color: #991B1E;
+    margin-right: 10px;
+ }
+  
+  .contacts-block-info-section__info{
+    margin-bottom: 25px;
+    color: #0E262D;
+  }
+  .contacts-block-info-section__social{
+      display: flex;
+  }
+
+  
+
+  .contacts-section-block-requisites-lines__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contacts-section-block-requisites-lines__title1{
+    color: #991B1E;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .contacts-section-block-requisites-lines__title{
+    color: #0E262D;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contacts-section-block-requisites-lines__text{
+    color: #991B1E;
+    font-family: 'Montserrat';
+    font-weight: 600;
+  }
+/*---Хлебные крошки---*/
+.section-breadcrumb{
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 15px;
+  padding-top: 35px;
+}
+
+.section-title__breadcrumb-breadcrumb{
+display: flex;
+flex-direction: row;
+font-family: 'Montserrat';
+font-size: 14px;
+gap: 10px;
+}
+
+.section-title__breadcrumb-breadcrumb{
+color: #869295;
+}
+
+.section-title_title-catalog{
+font-size: 40px;
+font-weight: 600;
+color: #0E262D;
+}
+.passiv-breadcrumb{
+  color: #869295;
+}
+
+.activ-breadcrumb{
+  color: #0E262D;
+}
+
+
+/*---Карта---*/
+

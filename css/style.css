@@ -195,6 +195,10 @@ ul li {
 
 /*---main---*/
 /*---Слайдер---*/
+.slider {
+  overflow: hidden;
+}
+
 .swiper {
   display: flex;
   justify-content: center;
@@ -211,11 +215,7 @@ ul li {
   font-family: Roboto Slab;
   font-weight: 600;
   color: #F5F5F5;
-  width: 413px;
-  margin-left: 102px;
   margin-bottom: 20px;
-  margin-top: 70px;
-
 }
 
 .swiper-slide-button {
@@ -226,7 +226,6 @@ ul li {
   background-color: #0E262D;
   width: 202px;
   height: 40px;
-  margin-left: 102px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -250,36 +249,31 @@ ul li {
 
 
 .variety-row {
-  display: flex;
-  justify-content: center;
-  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .variety-row-block {
+  padding: 10px;
   background-color: #0E262D;
-  width: 280px;
-  height: 100px;
 }
 
-@media only screen and (max-width: 768px) {
-  .variety-row-block {
-    width: 270px;
-  }
+.product-card-row-block__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .variety-row-block-elements {
   display: flex;
-}
-
-.variety-row-block__img {
-  margin-left: 10px;
-  margin-top: 10px;
-
 }
 
 .variety-row-block__title {
@@ -295,6 +289,7 @@ ul li {
 /*---Карточки продуктов---*/
 
 .product {
+  padding-bottom: 30px;
   background-color: #F5F5F5;
 }
 
@@ -333,32 +328,21 @@ ul li {
 }
 
 .product-card-row {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 28px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 
 .product-card-row-block {
   background-color: white;
-  width: 183px;
-  height: 387px;
+  min-height: 387px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-@media only screen and (max-width: 768px) {}
-
-@media only screen and (max-width: 768px) {
-  .variety-row-block {
-    width: 173px;
-  }
-}
-
-.product-card-row-block__img {
-  margin-left: 10px;
-}
 
 .product-card-row-block__info {
   display: flex;
@@ -398,10 +382,12 @@ ul li {
 .product-card-row-block__button {
   display: flex;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .product-card-row-block__button-button {
-  width: 163px;
+  width: 100%;
+
   height: 37px;
   background-color: #991B1E;
   color: #F5F5F5;
@@ -853,4 +839,9 @@ textarea {
 .contacts-section-block-requisites-lines__line {
   border-bottom: 1px solid grey;
   width: 100%;
+}
+
+.swiper-slide__body {
+  padding: 70px 0 70px 100px;
+  max-width: 415px;
 }

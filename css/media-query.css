@@ -15,12 +15,11 @@
   .footer-sections,
   .error-section-block,
   .basket-section-block,
-  .basket-sections-table__row {
+  .basket-sections-table__row,
+  .map-title,
+  .product-sections,
+  .swiper {
     width: 100%;
-  }
-
-  .promotion {
-    padding: 0 !important;
   }
 
 
@@ -184,9 +183,41 @@
   .basket-sections-table__row-delete {
     margin-right: 15px;
   }
+
+  .product-card-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-card-row-block__button {
+    margin-bottom: 10px;
+  }
+
+  .product-card-row-block {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1200px) {
+
+  .variety-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .variety-row-block__title-title {
+    font-size: 14px;
+  }
+
+  .variety-row-block__img {
+    width: 60px;
+    height: 60px;
+
+  }
+
+  .variety-row-block__img img {
+    width: 100%;
+    height: 100%;
+  }
+
   .header-sections-nav-buttom-link {
     column-gap: 20px;
   }
@@ -230,7 +261,22 @@
 
 
 @media (max-width: 991.98px) {
+  .swiper-slide-title {
+    font-size: 26px;
+  }
 
+  .swiper-slide {
+    background-position: center;
+  }
+
+  .swiper-slide__body {
+    padding: 60px 0 60px 20px;
+  }
+
+  .map-title-title,
+  .advantage-block-title-title {
+    font-size: 40px;
+  }
 
   .error-section-info {
     width: auto;
@@ -473,6 +519,53 @@
 }
 
 @media (max-width: 767.98px) {
+  .swiper-slide-title {
+    font-size: 20px;
+  }
+
+  .swiper-slide {
+    background-color: #991B1E;
+    background-image: none !important;
+  }
+
+  .swiper-slide__body {
+    height: auto;
+    margin-top: auto;
+  }
+
+  .info-contacts {
+    text-align: center;
+  }
+
+  .product-card-row {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .variety-row {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2px;
+  }
+
+  .variety-row-block {
+    padding: 4px;
+  }
+
+  .variety-row-block__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .variety-row-block__title-title {
+    font-size: 16px;
+  }
+
+  .map-title-title,
+  .advantage-block-title-title {
+    font-size: 25px;
+  }
+
   .basket-sections-form__elements {
     padding: 20px;
   }
@@ -705,5 +798,14 @@
   .promotion-navigation {
     flex-direction: column;
     row-gap: 20px;
+  }
+
+  .product-top {
+    align-items: center;
+  }
+
+  .product-top__sections {
+    flex-direction: column;
+    row-gap: 10px;
   }
 }

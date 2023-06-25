@@ -438,19 +438,21 @@ ul li {
 }
 
 .promotion-card-block-sections-left {
-
   background-color: #CCCCCC;
-  width: 387px;
-  height: 200px;
+  min-height: 200px;
   padding-top: 15px;
   padding-left: 30px;
+}
+
+.promotion-card-block-sections-left .promotion-card-block__time-title1,
+.promotion-card-block-sections-right .promotion-card-block__time-title3 {
+  color: #fff;
 }
 
 .promotion-card-block-sections-center {
 
   background-image: url(/img/promotion-center.svg);
-  width: 387px;
-  height: 200px;
+  min-height: 200px;
   padding-top: 15px;
   padding-left: 30px;
 }
@@ -458,8 +460,7 @@ ul li {
 .promotion-card-block-sections-right {
 
   background-color: #0E262D;
-  width: 387px;
-  height: 200px;
+  min-height: 200px;
   padding-top: 15px;
   padding-left: 30px;
 }
@@ -847,4 +848,9 @@ textarea {
 
 .burger {
   display: none;
+}
+
+.contacts-section-block-requisites-lines__line {
+  border-bottom: 1px solid grey;
+  width: 100%;
 }

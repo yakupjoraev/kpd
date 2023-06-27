@@ -736,9 +736,16 @@ ul li {
 }
 
 .map {
-  height: 691px;
+  min-height: 691px;
 }
 
+.ymaps-2-1-79-inner-panes {
+  filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+}
 
 /*---footer---*/
 
@@ -844,4 +851,13 @@ textarea {
 .swiper-slide__body {
   padding: 70px 0 70px 100px;
   max-width: 415px;
+}
+
+input.questions-input__name,
+input.questions-input__number,
+textarea.questions-input__comment {
+  padding: 18px 28px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: #0E262D;
 }

@@ -1,9 +1,19 @@
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+
+function mainSlider() {
+  const container = document.querySelector('.slider')
+  if (!container) {
+    return null
+  }
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+}
+
+mainSlider()
 
 function tabsContainer() {
   const container = document.querySelector('.tabs')
@@ -96,7 +106,7 @@ function init() {
 
   let placemark = new ymaps.Placemark(center, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/location-icon.svg',
+    iconImageHref: 'img/location-icon.svg',
     iconImageSize: [42, 42],
     iconImageOffset: [-21, -41]
   })
@@ -114,3 +124,4 @@ function init() {
 }
 
 ymaps.ready(init);
+

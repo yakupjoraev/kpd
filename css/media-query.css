@@ -23,7 +23,8 @@
   .description,
   .description-block-buttom__text,
   .cardproduct-section-block-info,
-  .cardproduct-section-block {
+  .cardproduct-section-block,
+  .delivery-buttom {
     width: 100%;
   }
 
@@ -47,8 +48,13 @@
   .error-section-block,
   .block-error,
   .basket-sections-table__row,
-  .block-cardproduct {
+  .block-cardproduct,
+  .delivery-buttom {
     height: auto;
+  }
+
+  .delivery-buttom {
+    padding: 20px 20px 0 0;
   }
 
   .contacts-section-block {

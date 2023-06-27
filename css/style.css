@@ -605,7 +605,7 @@ ul li {
 /*---Вопросы---*/
 .questions {
   height: 654px;
-  background-image: url(/bg-questions.svg);
+  background-image: url(/img/bg-questions.svg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

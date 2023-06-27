@@ -437,7 +437,7 @@ ul li {
 
 .promotion-card-block-sections-center {
 
-  background-image: url(/img/promotion-center.svg);
+  background-image: url(../img/promotion-center.svg);
   min-height: 200px;
   padding-top: 15px;
   padding-left: 30px;
@@ -605,7 +605,7 @@ ul li {
 /*---Вопросы---*/
 .questions {
   height: 654px;
-  background-image: url(/img/bg-questions.svg);
+  background-image: url(../img/bg-questions.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

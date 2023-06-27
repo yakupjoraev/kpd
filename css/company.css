@@ -154,7 +154,7 @@
   margin-bottom: 40px;
   height: 344px;
   align-items: center;
-  background-image: url(/img/company.png);
+  background-image: url(./img/company.png);
 }
 
 .question-input__sogl-text {

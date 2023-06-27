@@ -44,6 +44,38 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 // ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
 tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active')
 
+function productPreviewSlider() {
+  const container = document.querySelector('.cardproduct-section-block-slider');
+
+  if (!container) {
+    return null
+  }
+  // Получаем список всех элементов swiper-slider-dot
+  const selectItems = document.querySelectorAll('.swiper-slider-dot');
+
+  // Получаем swiper
+  const swiper = new Swiper('.cardproduct-section-block-slider', {
+    slidesPerView: 1,
+  });
+  function removeActive() {
+    selectItems.forEach(selectItem => {
+      selectItem.classList.remove('active')
+    });
+
+  }
+
+
+  // Добавляем обработчик события клика на каждый элемент swiper-slider-dot
+  selectItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      // Активируем соответствующий слайд в swiper
+      swiper.slideTo(index);
+      removeActive()
+      item.classList.add('active')
+    });
+  });
+}
+productPreviewSlider()
 
 function init() {
 

@@ -20,7 +20,10 @@
   .product-sections,
   .swiper,
   .documentation,
-  .description {
+  .description,
+  .description-block-buttom__text,
+  .cardproduct-section-block-info,
+  .cardproduct-section-block {
     width: 100%;
   }
 
@@ -43,7 +46,8 @@
   .contacts-section,
   .error-section-block,
   .block-error,
-  .basket-sections-table__row {
+  .basket-sections-table__row,
+  .block-cardproduct {
     height: auto;
   }
 
@@ -269,6 +273,49 @@
 
 
 @media (max-width: 991.98px) {
+  .cardproduct-section-block__swiper-block {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .cardproduct-section-block-slider {
+    height: 347px;
+  }
+
+  .cardproduct-section-block-img-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .cardproduct-section-block-info-amount {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .basket-sections-table__row-amount {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .basket-sections-form__elements-button-button {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .basket-sections-form__elements-button {
+    width: 100%;
+  }
+
+  .cardproduct-section-block-info-amount {
+    margin-bottom: 20px;
+  }
+
+  .basket-sections-table__row-amount-amount {
+    width: 100%;
+  }
 
   .documentation-block {
     flex-direction: column;
@@ -544,6 +591,59 @@
 }
 
 @media (max-width: 767.98px) {
+
+  .cardproduct-section-block {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .cardproduct-section-block-slider,
+  .cardproduct-section-block-img.swiper-wrapper {
+    width: 100% !important;
+    min-width: 0;
+    height: auto;
+  }
+
+  .cardproduct-section-block-slider .swiper-slide {
+    background-color: transparent;
+  }
+
+  .cardproduct-section-block-img-block.swiper-slide {
+    /* width: 100% !important; */
+  }
+
+  .cardproduct-section-block-img {
+    margin: 0;
+  }
+
+  .cardproduct-section-block {
+    padding: 20px;
+  }
+
+  .cardproduct-section-block-img-block__buttom img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 347px;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cardproduct-section-block-img-column {
+    margin-right: 0;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .tabs__content-item--descr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .description-block-buttom__text {
+    margin-left: 0;
+  }
+
   .tabs {
     overflow: hidden;
   }

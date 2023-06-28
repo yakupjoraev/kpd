@@ -44,6 +44,18 @@
   color: #0E262D;
 }
 
+.contacts-block-info-section__info a {
+  display: flex;
+  width: fit-content;
+  color: #0E262D;
+
+  transition: color 0.2s linear;
+}
+
+.contacts-block-info-section__info a:hover {
+  color: #991B1E;
+}
+
 .contacts-block-info-section__social {
   display: flex;
 }
@@ -64,6 +76,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  column-gap: 5px;
 }
 
 .contacts-section-block-requisites-lines__title1 {

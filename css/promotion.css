@@ -68,7 +68,11 @@
   font-size: 18px;
   font-weight: 500;
   color: #0E262D;
+  transition: color 0.2s linear;
+}
 
+.promotion-navigation__list-link:hover {
+  color: #991B1E;
 }
 
 .promotion-navigation__list-list-activ {

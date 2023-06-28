@@ -94,7 +94,48 @@ function productPreviewSlider() {
     });
   });
 }
-productPreviewSlider()
+productPreviewSlider();
+
+function productsSlider() {
+  const container = document.querySelector('.product-slider');
+
+  if (!container) {
+    return null
+  }
+
+  var swiper = new Swiper(".product-slider__slider", {
+    navigation: {
+      nextEl: ".product-card__arrow-next",
+      prevEl: ".product-card__arrow-prev",
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      767: {
+        slidesPerView: 4,
+        spaceBetween: 10
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 20
+      }
+    },
+  });
+
+}
+
+productsSlider();
+
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
 
 function init() {
   let center = [56.868918274719825, 38.244967662040686];

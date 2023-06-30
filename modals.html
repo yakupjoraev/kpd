@@ -1,0 +1,147 @@
+<!-- Modal -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+  <button class="open-modal-btn" data-modal-id="modal1">Open Modal 1</button>
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <h2 class="modal-title">Оформить заказ файлом</h2>
+      <p class="modal-descr">Отправьте нам файл со списком необходимых вам товаров и наш менеджер ответит вам в течение
+        30 минут</p>
+
+      <div class="modal-form">
+        <div class="modal-form__inner">
+          <div class="modal-form__groups">
+            <div class="modal-form__group">
+              <input class="modal-form__input" type="text" placeholder="Как вас зовут?">
+              <input class="modal-form__input" type="tel" placeholder="Телефон">
+              <input class="modal-form__input" type="email" placeholder="Электронная почта">
+            </div>
+            <div class="modal-form__group">
+              <textarea class="modal-form__textarea" placeholder="Комментарий к заказу"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-form__file">
+            <input class="modal-form__file-input" type="file" id="file">
+
+            <label class="modal-form__file-label" for="file">
+              <p class="modal-form__file-text">
+                Загрузите или перетащите сюда файлы
+              </p>
+
+              <p class="modal-form__file-formats">
+                Не более 1 файла, формат XML, XLSX, TXT, DOCX, JPEG, PNG, PDF
+              </p>
+            </label>
+          </div>
+
+          <div class="modal-form__footer">
+            <button type="button" class="modal-form__btn">Оформить заказ</button>
+
+            <input class="modal-form__checkbox" type="checkbox" id="checkbox">
+
+            <label class="modal-form__checkbox-label" for="checkbox">
+
+              <div class="modal-form__checkbox-checked"></div>
+
+              <div class="modal-form__checkbox-descr">
+                Даю согласие на обработку персональных данных в соответствии с
+                <a class="modal-form__checkbox-link" href="#">пользовательским соглашением</a>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button class="close-modal-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_79_24967)">
+            <path
+              d="M17.6569 16.2426L13.4142 12L17.6569 7.75735C17.8444 7.56981 17.9497 7.31546 17.9497 7.05024C17.9497 6.78502 17.8444 6.53067 17.6569 6.34313C17.4693 6.1556 17.215 6.05024 16.9497 6.05024C16.6845 6.05024 16.4302 6.1556 16.2426 6.34313L12 10.5858L7.75736 6.34313C7.56982 6.1556 7.31547 6.05024 7.05025 6.05024C6.78504 6.05024 6.53068 6.1556 6.34315 6.34313C6.15561 6.53067 6.05025 6.78502 6.05025 7.05024C6.05025 7.31546 6.15561 7.56981 6.34315 7.75735L10.5858 12L6.34315 16.2426C6.15561 16.4302 6.05025 16.6845 6.05025 16.9497C6.05025 17.215 6.15561 17.4693 6.34315 17.6568C6.53068 17.8444 6.78504 17.9497 7.05025 17.9497C7.31547 17.9497 7.56982 17.8444 7.75736 17.6568L12 13.4142L16.2426 17.6568C16.4302 17.8444 16.6845 17.9497 16.9497 17.9497C17.215 17.9497 17.4693 17.8444 17.6569 17.6568C17.8444 17.4693 17.9497 17.215 17.9497 16.9497C17.9497 16.6845 17.8444 16.4302 17.6569 16.2426Z"
+              fill="#CCCCCC" />
+          </g>
+          <defs>
+            <clipPath id="clip0_79_24967">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+      </button>
+    </div>
+  </div>
+
+  <button class="open-modal-btn" data-modal-id="modal2">Open Modal 2</button>
+  <div class="modal" id="modal2">
+    <div class="modal-content modal-content--little">
+      <h2 class="modal-title">Обратный звонок</h2>
+      <p class="modal-descr">Оставьте свои данные и наш менеджер свяжется с вами в течение 30 минут</p>
+
+      <div class="modal-form">
+        <div class="modal-form__inner">
+          <div class="modal-form__groups modal-form__groups--grid-1">
+            <div class="modal-form__group">
+              <input class="modal-form__input" type="text" placeholder="Как вас зовут?">
+              <input class="modal-form__input" type="tel" placeholder="Телефон">
+            </div>
+          </div>
+
+
+          <div class="modal-form__footer modal-form__footer--reverse">
+            <button type="button" class="modal-form__btn">Оформить заказ</button>
+
+            <input class="modal-form__checkbox" type="checkbox" id="checkbox2">
+
+            <label class="modal-form__checkbox-label" for="checkbox2">
+
+              <div class="modal-form__checkbox-checked"></div>
+
+              <div class="modal-form__checkbox-descr">
+                Даю согласие на обработку персональных данных в соответствии с
+                <a class="modal-form__checkbox-link" href="#">пользовательским соглашением</a>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button class="close-modal-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_79_24967)">
+            <path
+              d="M17.6569 16.2426L13.4142 12L17.6569 7.75735C17.8444 7.56981 17.9497 7.31546 17.9497 7.05024C17.9497 6.78502 17.8444 6.53067 17.6569 6.34313C17.4693 6.1556 17.215 6.05024 16.9497 6.05024C16.6845 6.05024 16.4302 6.1556 16.2426 6.34313L12 10.5858L7.75736 6.34313C7.56982 6.1556 7.31547 6.05024 7.05025 6.05024C6.78504 6.05024 6.53068 6.1556 6.34315 6.34313C6.15561 6.53067 6.05025 6.78502 6.05025 7.05024C6.05025 7.31546 6.15561 7.56981 6.34315 7.75735L10.5858 12L6.34315 16.2426C6.15561 16.4302 6.05025 16.6845 6.05025 16.9497C6.05025 17.215 6.15561 17.4693 6.34315 17.6568C6.53068 17.8444 6.78504 17.9497 7.05025 17.9497C7.31547 17.9497 7.56982 17.8444 7.75736 17.6568L12 13.4142L16.2426 17.6568C16.4302 17.8444 16.6845 17.9497 16.9497 17.9497C17.215 17.9497 17.4693 17.8444 17.6569 17.6568C17.8444 17.4693 17.9497 17.215 17.9497 16.9497C17.9497 16.6845 17.8444 16.4302 17.6569 16.2426Z"
+              fill="#CCCCCC" />
+          </g>
+          <defs>
+            <clipPath id="clip0_79_24967">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+      </button>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

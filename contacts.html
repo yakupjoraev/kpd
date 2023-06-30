@@ -6,10 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PDK</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/privacy.css">
-  <link rel="stylesheet" href="./css/error.css">
-  <link rel="stylesheet" href="./css/contacts.css">
-  <link rel="stylesheet" href="./css/media-query.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
@@ -124,7 +120,7 @@
           <li class="header-footer__item header-footer__item--line"></li>
 
           <li class="header-footer__item">
-            <a class="header-footer__link" href="#">
+            <a class="header-footer__link search-js" href="#" data-search onclick="event.preventDefault()">
               <div class="header-footer__item-pic">
                 <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -137,6 +133,7 @@
               <p class="header-footer__item-text">Поиск</p>
             </a>
           </li>
+
           <li class="header-footer__item header-footer__item--line"></li>
 
           <li class="header-footer__item">
@@ -183,6 +180,47 @@
             </a>
           </li>
         </ul>
+
+
+
+      </div>
+
+      <div class="search-products" data-search-products>
+        <div class="search-products__exit" data-search-products-exit>
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="33" height="33" fill="white" />
+            <rect x="6.9541" y="25" width="25" height="2" transform="rotate(-45 6.9541 25)" fill="#991B1E" />
+            <rect x="8.36865" y="7.46521" width="25" height="2" transform="rotate(45 8.36865 7.46521)" fill="#991B1E" />
+          </svg>
+
+        </div>
+
+        <div class="search-products__search">
+          <input type="search" class="search-products__search-input">
+          <button type="button" class="search-products__search-btn">
+            <img class="search-products__seacrh-pic" src="./img/search-light.svg" alt="">
+          </button>
+        </div>
+
+        <ul class="search-products__list">
+          <li class="search-products__item">
+            <a class="search-products__item-link" href="#">
+              <img class="search-products__item-pic" src="./img/search-item-1.png" alt="">
+
+              <p class="search-products__item-descr">Донный клапан <span>шар</span>овый под приварку с пневмоприводом,
+                нерж.304
+                DN40, TLBBV40WD-P TITAN LOCK</p>
+            </a>
+          </li>
+
+          <li class="search-products__item">
+            <a class="search-products__item-link" href="#">
+              <img class="search-products__item-pic" src="./img/search-item-2.png" alt="">
+
+              <p class="search-products__item-descr"><span>шар</span>нир</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -192,159 +230,165 @@
   <main>
     <div class="block-contacts">
       <!--Хлебные крошки-->
-      <div class="section-breadcrumb">
-        <div class="section-title_breadcrumb">
-          <ul class="section-title__breadcrumb-breadcrumb">
-            <li>
-              <a href="" class="passiv-breadcrumb">Главная</a>
-            </li>
-            <li>
-              <img src="./img/breadcrumb-passiv.svg" alt="img">
-            </li>
-            <li class="active">
-              <a href="" class="activ-breadcrumb">Контакты</a>
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <div class="section-breadcrumb">
+          <div class="section-title_breadcrumb">
+            <ul class="section-title__breadcrumb-breadcrumb">
+              <li>
+                <a href="" class="passiv-breadcrumb">Главная</a>
+              </li>
+              <li>
+                <img src="./img/breadcrumb-passiv.svg" alt="img">
+              </li>
+              <li class="active">
+                <a href="" class="activ-breadcrumb">Контакты</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="section-title_title">
-          <p class="section-title_title-catalog">Контакты</p>
+          <div class="section-title_title">
+            <p class="section-title_title-catalog">Контакты</p>
+          </div>
         </div>
       </div>
 
 
+
       <div class="contacts-section">
-        <div class="contacts-section-block">
+        <div class="container">
+          <div class="contacts-section-block">
 
-          <div class="contacts-section-block-info">
+            <div class="contacts-section-block-info">
 
-            <div class="contacts-block-info">
+              <div class="contacts-block-info">
 
-              <div class="contacts-block-info-section">
-                <div class="contacts-block-info-section__title">
-                  <p>Адрес: </p>
+                <div class="contacts-block-info-section">
+                  <div class="contacts-block-info-section__title">
+                    <p>Адрес: </p>
+                  </div>
+                  <div class="contacts-block-info-section__info">
+                    <p>Москва, ул. Воробьева д. 158, офис 187</p>
+                  </div>
                 </div>
-                <div class="contacts-block-info-section__info">
-                  <p>Москва, ул. Воробьева д. 158, офис 187</p>
+
+                <div class="contacts-block-info-section">
+                  <div class="contacts-block-info-section__title">
+                    <p>Телефон: </p>
+                  </div>
+                  <div class="contacts-block-info-section__info">
+                    <a href="tel:+78985665685">+7 898 566 56 85</a>
+                    <a href="tel:+78985665685">+7 898 566 56 85</a>
+                  </div>
+                </div>
+
+                <div class="contacts-block-info-section">
+                  <div class="contacts-block-info-section__social">
+                    <div class="contacts-block-info-section__mess">
+                      <p>Мессенджеры</p>
+                    </div>
+                    <div class="contacts-block-info-section__telegram">
+                      <a href="#">
+                        <img src="./img/telegram.svg" alt="img">
+                      </a>
+                    </div>
+                    <div class="contacts-block-info-section__viber">
+                      <a href="#">
+                        <img src="./img/telegram.svg" alt="img">
+                      </a>
+                    </div>
+                    <div class="contacts-block-info-section__watsap">
+                      <a href="#">
+                        <img src="./img/telegram.svg" alt="img">
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="contacts-block-info-section">
-                <div class="contacts-block-info-section__title">
-                  <p>Телефон: </p>
-                </div>
-                <div class="contacts-block-info-section__info">
-                  <a href="tel:+78985665685">+7 898 566 56 85</a>
-                  <a href="tel:+78985665685">+7 898 566 56 85</a>
-                </div>
+            </div>
+
+            <div class="contacts-section-block-requisites">
+              <div class="contacts-section-block-requisites-title">
+                <p class="contacts-section-block-requisites-lines__title1">
+                  Реквизиты:
+                </p>
               </div>
 
-              <div class="contacts-block-info-section">
-                <div class="contacts-block-info-section__social">
-                  <div class="contacts-block-info-section__mess">
-                    <p>Мессенджеры</p>
-                  </div>
-                  <div class="contacts-block-info-section__telegram">
-                    <a href="#">
-                      <img src="./img/telegram.svg" alt="img">
-                    </a>
-                  </div>
-                  <div class="contacts-block-info-section__viber">
-                    <a href="#">
-                      <img src="./img/telegram.svg" alt="img">
-                    </a>
-                  </div>
-                  <div class="contacts-block-info-section__watsap">
-                    <a href="#">
-                      <img src="./img/telegram.svg" alt="img">
-                    </a>
-                  </div>
+              <div class="contacts-section-block-requisites-lines">
+                <div class="contacts-section-block-requisites-lines__row">
+                  <p class="contacts-section-block-requisites-lines__title">
+                    Наименование
+                  </p>
+
+                  <div class="contacts-section-block-requisites-lines__line"></div>
+
+
+                  <p class="contacts-section-block-requisites-lines__text">
+                    ООО «КПД-подшипниковая компания»
+                  </p>
                 </div>
+                <div class="contacts-section-block-requisites-lines__row">
+                  <p class="contacts-section-block-requisites-lines__title">
+                    ОГРН
+                  </p>
+
+                  <div class="contacts-section-block-requisites-lines__line"></div>
+
+                  <p class="contacts-section-block-requisites-lines__text">
+                    1157756677027
+                  </p>
+                </div>
+                <div class="contacts-section-block-requisites-lines__row">
+                  <p class="contacts-section-block-requisites-lines__title">
+                    ИНН
+                  </p>
+
+                  <div class="contacts-section-block-requisites-lines__line"></div>
+
+                  <p class="contacts-section-block-requisites-lines__text">
+                    11577566770
+                  </p>
+                </div>
+                <div class="contacts-section-block-requisites-lines__row">
+                  <p class="contacts-section-block-requisites-lines__title">
+                    КПП
+                  </p>
+
+                  <div class="contacts-section-block-requisites-lines__line"></div>
+
+                  <p class="contacts-section-block-requisites-lines__text">
+                    115775667
+                  </p>
+                </div>
+                <div class="contacts-section-block-requisites-lines__row">
+                  <p class="contacts-section-block-requisites-lines__title">
+                    Адрес
+                  </p>
+
+                  <div class="contacts-section-block-requisites-lines__line"></div>
+
+                  <p class="contacts-section-block-requisites-lines__text">
+                    Москва, ул. Воробьева, д. 158, офис 187
+                  </p>
+                </div>
+                <div class="contacts-section-block-requisites-lines__row">
+                  <p class="contacts-section-block-requisites-lines__title">
+                    Генеральный директор
+                  </p>
+
+                  <div class="contacts-section-block-requisites-lines__line"></div>
+
+                  <p class="contacts-section-block-requisites-lines__text">
+                    Иванов Иван Иванович
+                  </p>
+                </div>
+
               </div>
             </div>
 
           </div>
-
-          <div class="contacts-section-block-requisites">
-            <div class="contacts-section-block-requisites-title">
-              <p class="contacts-section-block-requisites-lines__title1">
-                Реквизиты:
-              </p>
-            </div>
-
-            <div class="contacts-section-block-requisites-lines">
-              <div class="contacts-section-block-requisites-lines__row">
-                <p class="contacts-section-block-requisites-lines__title">
-                  Наименование
-                </p>
-
-                <div class="contacts-section-block-requisites-lines__line"></div>
-
-
-                <p class="contacts-section-block-requisites-lines__text">
-                  ООО «КПД-подшипниковая компания»
-                </p>
-              </div>
-              <div class="contacts-section-block-requisites-lines__row">
-                <p class="contacts-section-block-requisites-lines__title">
-                  ОГРН
-                </p>
-
-                <div class="contacts-section-block-requisites-lines__line"></div>
-
-                <p class="contacts-section-block-requisites-lines__text">
-                  1157756677027
-                </p>
-              </div>
-              <div class="contacts-section-block-requisites-lines__row">
-                <p class="contacts-section-block-requisites-lines__title">
-                  ИНН
-                </p>
-
-                <div class="contacts-section-block-requisites-lines__line"></div>
-
-                <p class="contacts-section-block-requisites-lines__text">
-                  11577566770
-                </p>
-              </div>
-              <div class="contacts-section-block-requisites-lines__row">
-                <p class="contacts-section-block-requisites-lines__title">
-                  КПП
-                </p>
-
-                <div class="contacts-section-block-requisites-lines__line"></div>
-
-                <p class="contacts-section-block-requisites-lines__text">
-                  115775667
-                </p>
-              </div>
-              <div class="contacts-section-block-requisites-lines__row">
-                <p class="contacts-section-block-requisites-lines__title">
-                  Адрес
-                </p>
-
-                <div class="contacts-section-block-requisites-lines__line"></div>
-
-                <p class="contacts-section-block-requisites-lines__text">
-                  Москва, ул. Воробьева, д. 158, офис 187
-                </p>
-              </div>
-              <div class="contacts-section-block-requisites-lines__row">
-                <p class="contacts-section-block-requisites-lines__title">
-                  Генеральный директор
-                </p>
-
-                <div class="contacts-section-block-requisites-lines__line"></div>
-
-                <p class="contacts-section-block-requisites-lines__text">
-                  Иванов Иван Иванович
-                </p>
-              </div>
-
-            </div>
-          </div>
-
         </div>
+
       </div>
 
 
@@ -354,9 +398,12 @@
   <!--Карта-->
   <!--Карта-->
   <section class="map">
-    <div class="map-title">
-      <p class="map-title-title">Более 200 складов по всей России</p>
+    <div class="container">
+      <div class="map-title">
+        <p class="map-title-title">Более 200 складов по всей России</p>
+      </div>
     </div>
+
     <div class="map" id="map">
 
     </div>

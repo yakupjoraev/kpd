@@ -6,10 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PDK</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/privacy.css">
-  <link rel="stylesheet" href="./css/promotion.css">
-  <link rel="stylesheet" href="./css/basket.css">
-  <link rel="stylesheet" href="./css/media-query.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
@@ -124,7 +120,7 @@
           <li class="header-footer__item header-footer__item--line"></li>
 
           <li class="header-footer__item">
-            <a class="header-footer__link" href="#">
+            <a class="header-footer__link search-js" href="#" data-search onclick="event.preventDefault()">
               <div class="header-footer__item-pic">
                 <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -137,6 +133,7 @@
               <p class="header-footer__item-text">Поиск</p>
             </a>
           </li>
+
           <li class="header-footer__item header-footer__item--line"></li>
 
           <li class="header-footer__item">
@@ -183,6 +180,47 @@
             </a>
           </li>
         </ul>
+
+
+
+      </div>
+
+      <div class="search-products" data-search-products>
+        <div class="search-products__exit" data-search-products-exit>
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="33" height="33" fill="white" />
+            <rect x="6.9541" y="25" width="25" height="2" transform="rotate(-45 6.9541 25)" fill="#991B1E" />
+            <rect x="8.36865" y="7.46521" width="25" height="2" transform="rotate(45 8.36865 7.46521)" fill="#991B1E" />
+          </svg>
+
+        </div>
+
+        <div class="search-products__search">
+          <input type="search" class="search-products__search-input">
+          <button type="button" class="search-products__search-btn">
+            <img class="search-products__seacrh-pic" src="./img/search-light.svg" alt="">
+          </button>
+        </div>
+
+        <ul class="search-products__list">
+          <li class="search-products__item">
+            <a class="search-products__item-link" href="#">
+              <img class="search-products__item-pic" src="./img/search-item-1.png" alt="">
+
+              <p class="search-products__item-descr">Донный клапан <span>шар</span>овый под приварку с пневмоприводом,
+                нерж.304
+                DN40, TLBBV40WD-P TITAN LOCK</p>
+            </a>
+          </li>
+
+          <li class="search-products__item">
+            <a class="search-products__item-link" href="#">
+              <img class="search-products__item-pic" src="./img/search-item-2.png" alt="">
+
+              <p class="search-products__item-descr"><span>шар</span>нир</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -193,484 +231,489 @@
     <!--Название страницы-->
     <div class="block-basket">
 
-      <!--Хлебные крошки-->
-      <div class="section-breadcrumb">
+      <div class="container">
+        <!--Хлебные крошки-->
+        <div class="section-breadcrumb">
 
-        <div class="section-title_breadcrumb">
-          <ul class="section-title__breadcrumb-breadcrumb">
-            <li>
-              <a href="" class="passiv-breadcrumb">Главная</a>
-            </li>
-            <li>
-              <img src="./img/breadcrumb-passiv.svg" alt="img">
-            </li>
-            <li class="active">
-              <a href="" class="activ-breadcrumb">Ваша корзина</a>
-            </li>
-          </ul>
+          <div class="section-title_breadcrumb">
+            <ul class="section-title__breadcrumb-breadcrumb">
+              <li>
+                <a href="" class="passiv-breadcrumb">Главная</a>
+              </li>
+              <li>
+                <img src="./img/breadcrumb-passiv.svg" alt="img">
+              </li>
+              <li class="active">
+                <a href="" class="activ-breadcrumb">Ваша корзина</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section-title_title">
+            <p class="section-title_title-catalog">Корзина</p>
+          </div>
+
         </div>
-
-        <div class="section-title_title">
-          <p class="section-title_title-catalog">Корзина</p>
-        </div>
-
       </div>
 
 
-      <!--Элементы корзины-->
-      <div class="basket-sections">
-        <div class="basket-section-block">
+      <div class="container">
+        <!--Элементы корзины-->
+        <div class="basket-sections">
+          <div class="basket-section-block">
 
 
-          <div class="basket-section-block-top">
+            <div class="basket-section-block-top">
 
-            <!--Список товаров-->
-            <div class="basket-sections-table">
+              <!--Список товаров-->
+              <div class="basket-sections-table">
 
-              <!--1строка-->
-              <div class="basket-sections-table__row">
+                <!--1строка-->
+                <div class="basket-sections-table__row">
 
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--2строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <p class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </p>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--3строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--4строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--5строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--6строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--7строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--8строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--9строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--10строка-->
-              <div class="basket-sections-table__row">
-
-                <div class="basket-sections-table__row-img">
-                  <img src="./img/basket-img.svg" alt="img">
-                </div>
-
-                <div class="basket-sections-table__row-text">
-                  <p class="basket-sections-table__row-text-title">
-                    TITAN LOCK
-                  </p>
-                  <a href="#" class="basket-sections-table__row-text-text">
-                    Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
-                  </a>
-                </div>
-
-                <div class="basket-sections-table__row-price">
-                  <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
-                  <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
-                </div>
-
-                <div class="basket-sections-table__row-amount">
-                  <button class="basket-sections-table__row-amount-minus">-</button>
-                  <p class="basket-sections-table__row-amount-amount">1</p>
-                  <button class="basket-sections-table__row-amount-plus">+</button>
-                </div>
-
-                <div class="basket-sections-table__row-delete">
-                  <a href="">
-                    <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
-                  </a>
-                </div>
-              </div>
-
-              <!--Навигация-->
-              <div class="promotion-navigation">
-                <div class="promotion-navigation__list">
-                  <ul class="promotion-navigation__list-list">
-                    <li class="promotion-navigation__list-link-passiv">
-                      <a href="">
-                        <img src="./img/promotion-navigation.svg" alt="">
-                      </a>
-                    </li>
-                    <li class="promotion-navigation__list-link-activ">
-                      <a href="" class="promotion-navigation__list-link-activ">1</a>
-                    </li>
-                    <li class="promotion-navigation__list-link-passiv">
-                      <a href="" class="promotion-navigation__list-link">2</a>
-                    </li>
-                    <li class="promotion-navigation__list-link-passiv">
-                      <a href="" class="promotion-navigation__list-link">3</a>
-                    </li>
-                    <li class="promotion-navigation__list-link">...</li>
-
-                    <li class="promotion-navigation__list-link-passiv">
-                      <a href="" class="promotion-navigation__list-link">7</a>
-                    </li>
-                    <li class="promotion-navigation__list-link-passiv">
-                      <a href="" class="promotion-navigation__list-link">8</a>
-                    </li>
-                    <li class="promotion-navigation__list-link-passiv">
-                      <a href="">
-                        <img src="./img/promotion-navigation2.svg" alt="">
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="promotion-navigation__button">
-                  <button class="promotion-navigation__button-button">Показать еще</button>
-                </div>
-              </div>
-
-            </div>
-
-
-            <!--Форма оформления заказа-->
-            <div class="basket-sections-form">
-              <div class="basket-sections-form__elements">
-                <div class="basket-sections-form__elements-title">
-                  <p class="basket-sections-form__elements-title-title">Сумма заказа</p>
-                </div>
-
-                <div class="basket-sections-form__elements-price">
-                  <p class="basket-sections-form__elements-price-active">28 832 ₽</p>
-                  <s class="basket-sections-form__elements-price-passiv">35 000 ₽</s>
-                </div>
-
-                <div class="basket-sections-form__elements-price-line">
-                  <img src="./img/Line 13.svg" alt="">
-                </div>
-
-                <div class="basket-sections-form__elements-title">
-                  <p class="basket-sections-form__elements-title-title">Оформить заказ</p>
-                </div>
-
-                <div class="basket-sections-form__elements-input">
-                  <input type="text" class="basket-sections-form__name" placeholder="Как вас зовут?">
-                </div>
-
-                <div class="basket-sections-form__elements-input">
-                  <input type="text" class="basket-sections-form__number" placeholder="Телефон">
-                </div>
-
-                <div class="basket-sections-form__elements-input">
-                  <input type="text" class="basket-sections-form__mail" placeholder="Электронная почта">
-                </div>
-
-                <div class="basket-sections-form__elements-input-comment">
-                  <textarea type="text" class="basket-sections-form__comment"
-                    placeholder="                                                                                                                                                                                                                                                                                                                               Комментарий к заказу"></textarea>
-                </div>
-
-                <div class="basket-sections-form__elements-agreement">
-                  <div class="basket-sections-form__agreement">
-                    <input type="checkbox">
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
                   </div>
-                  <div class="basket-sections-form__agreement-text">
-                    <p>Даю согласие на обработку персональных
-                      данный в соответствии с пользовательским соглашением</p>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
                   </div>
                 </div>
 
-                <div class="basket-sections-form__elements-button">
-                  <button class="basket-sections-form__elements-button-button">Оформить заказ</button>
+                <!--2строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <p class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </p>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--3строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--4строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--5строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--6строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--7строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--8строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--9строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--10строка-->
+                <div class="basket-sections-table__row">
+
+                  <div class="basket-sections-table__row-img">
+                    <img src="./img/basket-img.svg" alt="img">
+                  </div>
+
+                  <div class="basket-sections-table__row-text">
+                    <p class="basket-sections-table__row-text-title">
+                      TITAN LOCK
+                    </p>
+                    <a href="#" class="basket-sections-table__row-text-text">
+                      Донный клапан шаровый под приварку с пневмоприводом, нерж.304 DN40, TLBBV40WD-P TITAN LOCK
+                    </a>
+                  </div>
+
+                  <div class="basket-sections-table__row-price">
+                    <s class="basket-sections-table__row-price-passiv">14 416 ₽/шт.</s>
+                    <p class="basket-sections-table__row-price-activ">28 832 ₽</p>
+                  </div>
+
+                  <div class="basket-sections-table__row-amount">
+                    <button class="basket-sections-table__row-amount-minus">-</button>
+                    <p class="basket-sections-table__row-amount-amount">1</p>
+                    <button class="basket-sections-table__row-amount-plus">+</button>
+                  </div>
+
+                  <div class="basket-sections-table__row-delete">
+                    <a href="">
+                      <img src="./img/basket-delete.svg" alt="" class="basket-sectoins-table__row-delete-img">
+                    </a>
+                  </div>
+                </div>
+
+                <!--Навигация-->
+                <div class="promotion-navigation">
+                  <div class="promotion-navigation__list">
+                    <ul class="promotion-navigation__list-list">
+                      <li class="promotion-navigation__list-link-passiv">
+                        <a href="">
+                          <img src="./img/promotion-navigation.svg" alt="">
+                        </a>
+                      </li>
+                      <li class="promotion-navigation__list-link-activ">
+                        <a href="" class="promotion-navigation__list-link-activ">1</a>
+                      </li>
+                      <li class="promotion-navigation__list-link-passiv">
+                        <a href="" class="promotion-navigation__list-link">2</a>
+                      </li>
+                      <li class="promotion-navigation__list-link-passiv">
+                        <a href="" class="promotion-navigation__list-link">3</a>
+                      </li>
+                      <li class="promotion-navigation__list-link">...</li>
+
+                      <li class="promotion-navigation__list-link-passiv">
+                        <a href="" class="promotion-navigation__list-link">7</a>
+                      </li>
+                      <li class="promotion-navigation__list-link-passiv">
+                        <a href="" class="promotion-navigation__list-link">8</a>
+                      </li>
+                      <li class="promotion-navigation__list-link-passiv">
+                        <a href="">
+                          <img src="./img/promotion-navigation2.svg" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="promotion-navigation__button">
+                    <button class="promotion-navigation__button-button">Показать еще</button>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <!--Форма оформления заказа-->
+              <div class="basket-sections-form">
+                <div class="basket-sections-form__elements">
+                  <div class="basket-sections-form__elements-title">
+                    <p class="basket-sections-form__elements-title-title">Сумма заказа</p>
+                  </div>
+
+                  <div class="basket-sections-form__elements-price">
+                    <p class="basket-sections-form__elements-price-active">28 832 ₽</p>
+                    <s class="basket-sections-form__elements-price-passiv">35 000 ₽</s>
+                  </div>
+
+                  <div class="basket-sections-form__elements-price-line">
+                    <img src="./img/Line 13.svg" alt="">
+                  </div>
+
+                  <div class="basket-sections-form__elements-title">
+                    <p class="basket-sections-form__elements-title-title">Оформить заказ</p>
+                  </div>
+
+                  <div class="basket-sections-form__elements-input">
+                    <input type="text" class="basket-sections-form__name" placeholder="Как вас зовут?">
+                  </div>
+
+                  <div class="basket-sections-form__elements-input">
+                    <input type="text" class="basket-sections-form__number" placeholder="Телефон">
+                  </div>
+
+                  <div class="basket-sections-form__elements-input">
+                    <input type="text" class="basket-sections-form__mail" placeholder="Электронная почта">
+                  </div>
+
+                  <div class="basket-sections-form__elements-input-comment">
+                    <textarea type="text" class="basket-sections-form__comment"
+                      placeholder="                                                                                                                                                                                                                                                                                                                               Комментарий к заказу"></textarea>
+                  </div>
+
+                  <div class="basket-sections-form__elements-agreement">
+                    <div class="basket-sections-form__agreement">
+                      <input type="checkbox">
+                    </div>
+                    <div class="basket-sections-form__agreement-text">
+                      <p>Даю согласие на обработку персональных
+                        данный в соответствии с пользовательским соглашением</p>
+                    </div>
+                  </div>
+
+                  <div class="basket-sections-form__elements-button">
+                    <button class="basket-sections-form__elements-button-button">Оформить заказ</button>
+                  </div>
                 </div>
               </div>
-            </div>
 
+
+
+
+            </div>
 
 
 
           </div>
-
-
-
         </div>
       </div>
+
 
 
 
@@ -775,6 +818,7 @@
 
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 
 </html>
